@@ -73,7 +73,7 @@ export default function App() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (window.location.pathname === '/admin') {
+    if ((window.location.pathname.includes('admin') || window.location.hash.includes('admin'))) {
       setIsAdminOpen(true);
     }
   }, []);

@@ -141,7 +141,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                       <div key={label} className="rounded-xl border border-stone-900/60 bg-stone-950 p-4 space-y-2">
                         <Icon className={`h-4 w-4 ${color} opacity-60`} />
                         <p className={`text-xl font-light font-mono ${color}`}>{value}</p>
-                        <p className="text-[10px] text-stone-600 uppercase tracking-wider">{label}</p>
+                        <p className="text-xs font-semibold tracking-wider text-stone-600 uppercase tracking-wider">{label}</p>
                       </div>
                     ))}
                   </div>
@@ -153,10 +153,10 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                           <Clock className="h-3.5 w-3.5 text-stone-700" />
                           <div>
                             <p className="text-xs font-light text-stone-300">{b.client}</p>
-                            <p className="text-[10px] text-stone-600 font-mono">{b.treatment}</p>
+                            <p className="text-xs font-semibold tracking-wider text-stone-600 font-mono">{b.treatment}</p>
                           </div>
                         </div>
-                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded border uppercase ${statusColors[b.status]}`}>{b.status}</span>
+                        <span className={`text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded border uppercase ${statusColors[b.status]}`}>{b.status}</span>
                       </div>
                     ))}
                   </div>
@@ -169,8 +169,8 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                     <div key={b.id} className="rounded-xl border border-stone-900/60 bg-stone-950 p-4 flex items-center justify-between gap-3">
                       <div className="space-y-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-mono text-stone-700">{b.id}</span>
-                          <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded border uppercase ${statusColors[b.status]}`}>{b.status}</span>
+                          <span className="text-xs font-semibold tracking-wider font-mono text-stone-700">{b.id}</span>
+                          <span className={`text-xs font-semibold tracking-wider font-mono px-1.5 py-0.5 rounded border uppercase ${statusColors[b.status]}`}>{b.status}</span>
                         </div>
                         <p className="text-sm font-light text-stone-300">{b.client}</p>
                         <p className="text-xs text-stone-600 font-mono">{b.treatment} · {b.time}</p>
@@ -192,10 +192,10 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                     <div key={t.name} className={`rounded-xl border p-4 space-y-2 ${t.status === 'In Session' ? 'border-stone-800/60 bg-stone-950' : t.status === 'Available' ? 'border-emerald-900/30 bg-emerald-950/10' : 'border-stone-900/40 bg-stone-950'}`}>
                       <div className="flex justify-between items-center">
                         <span className="text-sm font-light text-stone-200">{t.name}</span>
-                        <span className={`text-[10px] font-mono uppercase ${t.status === 'Available' ? 'text-emerald-400' : t.status === 'In Session' ? 'text-stone-300' : 'text-stone-600'}`}>{t.status}</span>
+                        <span className={`text-xs font-semibold tracking-wider font-mono uppercase ${t.status === 'Available' ? 'text-emerald-400' : t.status === 'In Session' ? 'text-stone-300' : 'text-stone-600'}`}>{t.status}</span>
                       </div>
                       <p className="text-xs text-stone-600 font-mono">{t.specialty}</p>
-                      <p className="text-[10px] text-stone-700 font-mono">{t.sessions} sessions today</p>
+                      <p className="text-xs font-semibold tracking-wider text-stone-700 font-mono">{t.sessions} sessions today</p>
                     </div>
                   ))}
                 </div>

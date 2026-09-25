@@ -33,7 +33,7 @@ export const TreatmentMenu: React.FC<TreatmentMenuProps> = ({ categories }) => {
                   {category.name}
                 </h3>
                 {/* Instant dynamic UX preview showing short details on collapse */}
-                <p className="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.12em] text-stone-500 group-open:invisible transition-all duration-300 break-words leading-relaxed whitespace-normal">
+                <p className="text-[9px] sm:text-xs font-semibold tracking-wider font-mono uppercase tracking-[0.12em] text-stone-500 group-open:invisible transition-all duration-300 break-words leading-relaxed whitespace-normal">
                   {category.name.includes("Bodywork") || category.name.includes("Massages")
                     ? `${hasItems ? category.items!.length : 0} Therapeutic Massages • 60-90 Min • Deep Muscle Rest`
                     : category.name.includes("Thermal") || category.name.includes("Aqueous")
@@ -63,22 +63,22 @@ export const TreatmentMenu: React.FC<TreatmentMenuProps> = ({ categories }) => {
                 {category.name.includes("Bodywork") || category.name.includes("Massages") ? (
                   <span>
                     Our signature bodywork is designed to release persistent muscular tension and restore alignment. Each session incorporates therapeutic pressure, customized organic botanical oils, and target-focused stretching techniques tailored to your lifestyle. 
-                    <span className="block mt-1 font-mono text-[10px] text-stone-500">Includes: Aromatherapy consultation • Restorative massage styles • Choice of light to deep pressure</span>
+                    <span className="block mt-1 font-mono text-xs font-semibold tracking-wider text-stone-500">Includes: Aromatherapy consultation • Restorative massage styles • Choice of light to deep pressure</span>
                   </span>
                 ) : category.name.includes("Thermal") || category.name.includes("Aqueous") ? (
                   <span>
                     Experience the restorative powers of mineral hydration and quiet thermal chambers. These hydrotherapy sessions and steam rituals stimulate safe circulation, clear mental fog, and soothe full-body muscular soreness.
-                    <span className="block mt-1 font-mono text-[10px] text-stone-500">Includes: Private herbal steam access • Mineral soak baths • Warm towels & infused botanical water</span>
+                    <span className="block mt-1 font-mono text-xs font-semibold tracking-wider text-stone-500">Includes: Private herbal steam access • Mineral soak baths • Warm towels & infused botanical water</span>
                   </span>
                 ) : category.name.includes("Facials") || category.name.includes("Skin") ? (
                   <span>
                     Our skin remedies protect and rejuvenate using clean, biodynamic botanicals, facial massage, and pure oxygen infusion. This is active skin medicine focused on hydration, natural dermal elasticity, and immediate calm radiance.
-                    <span className="block mt-1 font-mono text-[10px] text-stone-500">Includes: Gentle botanical cleanse • Warm compress • Nourishing customized serum & protective shielding</span>
+                    <span className="block mt-1 font-mono text-xs font-semibold tracking-wider text-stone-500">Includes: Gentle botanical cleanse • Warm compress • Nourishing customized serum & protective shielding</span>
                   </span>
                 ) : (
                   <span>
                     A guided breathing practice to lower heart rate and calm mental overactivity. Ideal for reducing anxiety, boosting respiratory depth, and clearing your mind in a quiet atmosphere.
-                    <span className="block mt-1 font-mono text-[10px] text-stone-500">Includes: Posture adjustment • Breath pacing tutorials • Soft-lighting guidance session</span>
+                    <span className="block mt-1 font-mono text-xs font-semibold tracking-wider text-stone-500">Includes: Posture adjustment • Breath pacing tutorials • Soft-lighting guidance session</span>
                   </span>
                 )}
               </div>

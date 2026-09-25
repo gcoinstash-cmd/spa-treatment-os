@@ -134,7 +134,7 @@ export default function App() {
             <span className="font-serif italic text-xs font-light tracking-widest">S</span>
           </div>
           <div>
-            <span className={`font-sans text-[10px] min-[400px]:text-xs tracking-[0.25em] min-[400px]:tracking-[0.3em] font-medium uppercase transition-colors ${isDark ? 'text-stone-300 group-hover:text-stone-100' : 'text-stone-700 group-hover:text-stone-900'}`}>
+            <span className={`font-sans text-xs font-semibold tracking-wider min-[400px]:text-xs tracking-[0.25em] min-[400px]:tracking-[0.3em] font-medium uppercase transition-colors ${isDark ? 'text-stone-300 group-hover:text-stone-100' : 'text-stone-700 group-hover:text-stone-900'}`}>
               SERENITY
             </span>
             <span className="block text-[7px] min-[400px]:text-[8px] font-mono tracking-widest text-stone-500">SANCTUARY</span>
@@ -172,7 +172,7 @@ export default function App() {
           <button 
             id="spa-admin-pass-btn"
             onClick={() => setIsAdminOpen(true)}
-            className={`hidden sm:inline-block text-[10px] tracking-[0.15em] uppercase font-light transition-colors pr-2 border-r ${isDark ? 'text-stone-400 hover:text-stone-100 border-stone-800/40' : 'text-stone-600 hover:text-stone-900 border-stone-200'}`}
+            className={`hidden sm:inline-block text-xs font-semibold tracking-wider tracking-[0.15em] uppercase font-light transition-colors pr-2 border-r ${isDark ? 'text-stone-400 hover:text-stone-100 border-stone-800/40' : 'text-stone-600 hover:text-stone-900 border-stone-200'}`}
           >
             [ ATELIER PASS ]
           </button>
@@ -216,7 +216,7 @@ export default function App() {
             {/* Audio controller pill */}
             <button 
               onClick={toggleMute}
-              className={`mb-8 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-stone-800/80 bg-stone-950/60 text-stone-400 hover:text-stone-100' : 'border-stone-200 bg-white/80 text-stone-600 hover:text-stone-900 shadow-sm'} text-[10px] uppercase tracking-widest transition-all`}
+              className={`mb-8 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-stone-800/80 bg-stone-950/60 text-stone-400 hover:text-stone-100' : 'border-stone-200 bg-white/80 text-stone-600 hover:text-stone-900 shadow-sm'} text-xs font-semibold tracking-wider uppercase tracking-widest transition-all`}
               title={isVideoMuted ? "Unmute background noise" : "Mute background noise"}
             >
               {isVideoMuted ? <VolumeX size={11} /> : <Volume2 size={11} />}
@@ -259,7 +259,7 @@ export default function App() {
           {/* Left Column (5 Columns) - Minimalist Asymmetric Editorial Copy */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-stone-500 block">Philosophy of Atmosphere</span>
+              <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-stone-500 block">Philosophy of Atmosphere</span>
               <h2 className={`font-serif text-3xl sm:text-4xl md:text-5xl font-light tracking-tight leading-[1.15] transition-colors duration-700 ${themeTextH1}`}>
                 The Raw Architecture of <span className="italic font-normal text-stone-400">Stillness</span>
               </h2>
@@ -281,7 +281,7 @@ export default function App() {
 
             {/* Quick interactive feature tabs */}
             <div className="pt-2">
-              <div className={`flex border-b ${isDark ? 'border-stone-900/80' : 'border-stone-200'} text-[10px] uppercase tracking-widest font-semibold text-stone-500 mb-4 gap-6`}>
+              <div className={`flex border-b ${isDark ? 'border-stone-900/80' : 'border-stone-200'} text-xs font-semibold tracking-wider uppercase tracking-widest font-semibold text-stone-500 mb-4 gap-6`}>
                 <button 
                   onClick={() => setActiveTab('philosophy')}
                   className={`pb-2.5 transition-all text-stone-400 relative ${activeTab === 'philosophy' ? (isDark ? 'text-white border-b border-stone-200' : 'text-stone-900 border-b border-stone-800') : 'hover:text-stone-500'}`}
@@ -335,7 +335,7 @@ export default function App() {
                       <span className={`font-serif italic text-2xl font-light ${isDark ? 'text-stone-350' : 'text-stone-900'}`}>Quiet</span>
                     </div>
                   </div>
-                  <p className={`text-[10px] font-mono tracking-[0.2em] px-4 py-1.5 rounded-sm border inline-block ${isDark ? 'text-stone-400 bg-[#0D0D0C]/80 border-stone-900' : 'text-stone-600 bg-white/90 border-stone-200'}`}>
+                  <p className={`text-xs font-semibold tracking-wider font-mono tracking-[0.2em] px-4 py-1.5 rounded-sm border inline-block ${isDark ? 'text-stone-400 bg-[#0D0D0C]/80 border-stone-900' : 'text-stone-600 bg-white/90 border-stone-200'}`}>
                     Circadian Wellness Core
                   </p>
                 </div>
@@ -382,7 +382,7 @@ export default function App() {
             The Treatment <span className="italic font-normal text-stone-400">Menu</span>
           </h2>
           
-          <p className={`text-xs sm:text-sm font-light max-w-xl mx-auto leading-relaxed transition-colors duration-700 ${themeTextSubtitle}`}>
+          <p className={`text-base font-semibold font-light max-w-xl mx-auto leading-relaxed transition-colors duration-700 ${themeTextSubtitle}`}>
             Expand the headers below to discover our deep physical restorative treatments, featuring seamless accordion transitions and fine dot-line styling. 
           </p>
 
@@ -390,7 +390,7 @@ export default function App() {
           <div className="flex flex-wrap justify-center gap-2 pt-6" id="ritual-filters">
             <button
               onClick={() => handleFilterChange('all')}
-              className={`px-4 py-1.5 rounded-full text-[10px] tracking-wider uppercase border transition-all ${
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider tracking-wider uppercase border transition-all ${
                 selectedRitualFilter === 'all'
                   ? (isDark ? 'bg-[#E5E4E0] text-[#0D0D0C] border-stone-200 font-semibold' : 'bg-stone-900 text-white border-stone-800 font-semibold')
                   : (isDark ? 'bg-stone-950/50 text-stone-400 border-stone-900/80 hover:text-stone-200' : 'bg-white/60 text-stone-600 border-stone-200 hover:text-stone-900 shadow-sm')
@@ -400,7 +400,7 @@ export default function App() {
             </button>
             <button
               onClick={() => handleFilterChange('body')}
-              className={`px-4 py-1.5 rounded-full text-[10px] tracking-wider uppercase border transition-all ${
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider tracking-wider uppercase border transition-all ${
                 selectedRitualFilter === 'body'
                   ? (isDark ? 'bg-[#E5E4E0] text-[#0D0D0C] border-stone-200 font-semibold' : 'bg-stone-900 text-white border-stone-800 font-semibold')
                   : (isDark ? 'bg-stone-950/50 text-stone-400 border-stone-900/80 hover:text-stone-200' : 'bg-white/60 text-stone-600 border-stone-200 hover:text-stone-900 shadow-sm')
@@ -410,7 +410,7 @@ export default function App() {
             </button>
             <button
               onClick={() => handleFilterChange('thermal')}
-              className={`px-4 py-1.5 rounded-full text-[10px] tracking-wider uppercase border transition-all ${
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider tracking-wider uppercase border transition-all ${
                 selectedRitualFilter === 'thermal'
                   ? (isDark ? 'bg-[#E5E4E0] text-[#0D0D0C] border-stone-200 font-semibold' : 'bg-stone-900 text-white border-stone-800 font-semibold')
                   : (isDark ? 'bg-stone-950/50 text-stone-400 border-stone-900/80 hover:text-stone-200' : 'bg-white/60 text-stone-600 border-stone-200 hover:text-stone-900 shadow-sm')
@@ -420,7 +420,7 @@ export default function App() {
             </button>
             <button
               onClick={() => handleFilterChange('facial')}
-              className={`px-4 py-1.5 rounded-full text-[10px] tracking-wider uppercase border transition-all ${
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider tracking-wider uppercase border transition-all ${
                 selectedRitualFilter === 'facial'
                   ? (isDark ? 'bg-[#E5E4E0] text-[#0D0D0C] border-stone-200 font-semibold' : 'bg-stone-900 text-white border-stone-800 font-semibold')
                   : (isDark ? 'bg-stone-950/50 text-stone-400 border-stone-900/80 hover:text-stone-200' : 'bg-white/60 text-stone-600 border-stone-200 hover:text-stone-900 shadow-sm')
@@ -444,7 +444,7 @@ export default function App() {
           <TreatmentMenu categories={categories} />
 
           {/* Quick interactive sandbox helper widget block within the dark section with robust design separation */}
-          <div className={`mt-8 pt-6 border-t ${isDark ? 'border-stone-900/80 text-stone-500' : 'border-stone-200/80 text-stone-600'} flex flex-col sm:flex-row justify-between items-center text-[10px] gap-6 w-full`}>
+          <div className={`mt-8 pt-6 border-t ${isDark ? 'border-stone-900/80 text-stone-500' : 'border-stone-200/80 text-stone-600'} flex flex-col sm:flex-row justify-between items-center text-xs font-semibold tracking-wider gap-6 w-full`}>
             <div className="flex items-center gap-1.5 min-w-0 text-center sm:text-left">
               <Clock size={12} className={`shrink-0 ${isDark ? 'text-stone-650' : 'text-stone-400'}`} /> 
               <span className="font-sans font-light tracking-wide leading-relaxed">
@@ -490,7 +490,7 @@ export default function App() {
             Essential <span className="italic font-normal text-stone-400 font-serif">Guidelines</span>
           </h2>
           
-          <p className={`text-xs sm:text-sm font-light max-w-lg mx-auto leading-relaxed transition-colors duration-700 ${isDark ? 'text-stone-400' : 'text-stone-650'}`}>
+          <p className={`text-base font-semibold font-light max-w-lg mx-auto leading-relaxed transition-colors duration-700 ${isDark ? 'text-stone-400' : 'text-stone-650'}`}>
             Familiarizing yourself with our simple spa etiquette and timing ensures a seamless, deeply calming experience for all guests.
           </p>
         </div>
@@ -563,7 +563,7 @@ export default function App() {
           {/* Left Column (5 columns) - Floating address label summary & booking card */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-stone-500 block">Our Sanctuary Location</span>
+              <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-stone-500 block">Our Sanctuary Location</span>
               <h2 className={`font-serif text-3xl sm:text-4xl font-light tracking-tight leading-normal ${themeTextH1}`}>
                 How to Locate our <span className="italic font-normal text-stone-400">Spa Sanctuary</span>
               </h2>
@@ -575,7 +575,7 @@ export default function App() {
 
             {/* floating editorial info card containing address details */}
             <div className={`border p-6 rounded-xl space-y-4 transition-all duration-700 shadow-xl ${isDark ? 'bg-[#0D0D0C]/80 border-stone-900/80 shadow-stone-950' : 'bg-[#EBE9E2]/50 border-stone-200 shadow-stone-200/20'}`}>
-              <span className="text-[10px] uppercase tracking-widest text-[#7A7568] font-bold block">Sanctuary Address</span>
+              <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-[#7A7568] font-bold block">Sanctuary Address</span>
               
               <div className="space-y-1">
                 <p className={`text-sm font-serif italic ${isDark ? 'text-stone-200' : 'text-stone-900'}`}>120 Quiet Valley Road</p>
@@ -625,7 +625,7 @@ export default function App() {
               {/* Floating map location banner badge */}
               <div className={`relative p-6 flex justify-between items-start z-10 bg-gradient-to-b ${isDark ? 'from-[#0D0D0C]/90' : 'from-[#FAF9F5]/90'} to-transparent`}>
                 <div>
-                  <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-stone-500 block">Topographic Survey</span>
+                  <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.2em] font-mono text-stone-500 block">Topographic Survey</span>
                   <h3 className={`font-serif italic mt-1 ${isDark ? 'text-stone-200' : 'text-stone-905'}`}>Satellite Valley View</h3>
                 </div>
                 <div className={`text-[9px] font-mono tracking-widest px-2 py-1 rounded border transition-colors ${isDark ? 'bg-stone-900/90 text-stone-300 border-stone-800' : 'bg-white/95 text-stone-700 border-stone-300 shadow-sm'}`}>
@@ -640,7 +640,7 @@ export default function App() {
                   <span className={`font-mono text-[9px] tracking-widest uppercase font-semibold ${isDark ? 'text-[#E5E4E0]' : 'text-stone-900'}`}>Sanctuary Location</span>
                 </div>
                 
-                <span className="text-[10px] font-mono text-stone-500">Serenity Wilderness Compass</span>
+                <span className="text-xs font-semibold tracking-wider font-mono text-stone-500">Serenity Wilderness Compass</span>
               </div>
 
             </div>
@@ -687,7 +687,7 @@ export default function App() {
                   />
                   <button
                     type="submit"
-                    className={`text-[10px] uppercase font-semibold tracking-widest px-6 py-3 transition-colors rounded-sm ${isDark ? 'bg-[#E5E4E0] hover:bg-white text-stone-950' : 'bg-stone-900 hover:bg-stone-850 text-white shadow-sm'}`}
+                    className={`text-xs font-semibold tracking-wider uppercase font-semibold tracking-widest px-6 py-3 transition-colors rounded-sm ${isDark ? 'bg-[#E5E4E0] hover:bg-white text-stone-950' : 'bg-stone-900 hover:bg-stone-850 text-white shadow-sm'}`}
                   >
                     Subscribe
                   </button>
@@ -708,7 +708,7 @@ export default function App() {
               <span className="hover:text-stone-700 dark:hover:text-stone-300 transition-colors cursor-pointer" onClick={() => alert("Sanctuary terms apply to all seasonal bookings and reservations.")}>Terms of Sanctuary</span>
             </div>
 
-            <div className="flex items-center space-x-2 text-[10px] tracking-wide font-light text-stone-400">
+            <div className="flex items-center space-x-2 text-xs font-semibold tracking-wider tracking-wide font-light text-stone-400">
               <span className="w-1.5 h-1.5 rounded-full bg-stone-500/55" />
               <span>Architectural Blueprint No. 13</span>
             </div>

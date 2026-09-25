@@ -100,7 +100,7 @@ export const BreathingSanctuary: React.FC = () => {
         <h3 className={`font-serif text-2xl font-light tracking-wide italic transition-colors ${isDarkMode ? 'text-[#E5E4E0]' : 'text-stone-900'}`}>
           Guided Breathing Ritual
         </h3>
-        <p className={`text-[11px] font-sans font-light max-w-xs mx-auto transition-colors ${isDarkMode ? 'text-stone-400' : 'text-stone-600'}`}>
+        <p className={`text-xs font-semibold font-sans font-light max-w-xs mx-auto transition-colors ${isDarkMode ? 'text-stone-400' : 'text-stone-600'}`}>
           Synchronize your breath to our traditional wellness rhythms. Proven to calm tension before your therapeutic treatments.
         </p>
       </div>
@@ -124,14 +124,14 @@ export const BreathingSanctuary: React.FC = () => {
             {phase}
           </span>
           
-          <span className="text-[10px] font-mono text-stone-500 mt-1">
+          <span className="text-xs font-semibold tracking-wider font-mono text-stone-500 mt-1">
             {secondsLeft}s remain
           </span>
         </div>
       </div>
 
       {/* Interactive Footer & Meta Progress Status Lines */}
-      <div className={`relative z-15 mt-10 pt-6 border-t flex justify-between items-center text-[10px] text-stone-500 font-mono tracking-wider ${isDarkMode ? 'border-stone-900/60' : 'border-stone-200'}`}>
+      <div className={`relative z-15 mt-10 pt-6 border-t flex justify-between items-center text-xs font-semibold tracking-wider text-stone-500 font-mono tracking-wider ${isDarkMode ? 'border-stone-900/60' : 'border-stone-200'}`}>
         <span className="flex items-center gap-1">
           <Sun size={11} className="text-[#7A7568]" /> 
           Respiration Coherence
